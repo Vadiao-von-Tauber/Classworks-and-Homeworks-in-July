@@ -45,6 +45,33 @@ class Starships_Info:
                     if not line:
                         break
                     print(line.strip())
+
+            with open('IV. tugboat Jurgen.txt', 'r') as ffff:
+                for line in ffff:
+                    print(line.strip())
+
+                for line in ffff:
+                    print(line.strip())
+
+                while True:
+                    line = ffff.readline()
+                    if not line:
+                        break
+                    print(line.strip())
+
+            with open('V. space yacht Externus Exterminatus.txt', 'r') as fffff:
+                for line in fffff:
+                    print(line.strip())
+
+                for line in fffff:
+                    print(line.strip())
+
+                while True:
+                    line = fffff.readline()
+                    if not line:
+                        break
+                    print(line.strip())
+
             #f.close()
 
 
@@ -52,7 +79,7 @@ Starships_Info.star_port_order()
 
 # .txt docs:
 #
-# I. starship Cruor Vult.txt'
+# I. starship Cruor Vult.txt
 # name ship: "Crvor Vult"
 # codename: "carmine"
 # space displacement: 800000 brt
@@ -89,3 +116,26 @@ Starships_Info.star_port_order()
 
 # ___
 
+# IV. tugboat Jurgen.txt
+# name ship: "Jurgen"
+# codename: "pug"
+# space displacement: 100 brt
+# number of guns: 4
+# hold volume: 20 brt
+# home port: "Valhalla secundus", 9942VALH4-00
+# status: 'in spacebase'.
+
+
+# ___
+
+# V. space yacht Externus Exterminatus.txt
+# name ship: "Externus Exterminatus"
+# codename: "haeganta"
+# space displacement: 5000 brt
+# number of guns: 'unknown'
+# hold volume: 1275 brt
+# home port: "Gudrun secundus", 444---2800---53INQ
+# status: 'unknown'.
+
+
+# ___
