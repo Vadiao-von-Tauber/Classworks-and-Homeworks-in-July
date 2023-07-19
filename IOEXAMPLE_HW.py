@@ -61,5 +61,5 @@ class IOEngine:
                print(line.strip())
             #f.close()
 
-#IOEngine.read_text_file()
-IOEngine.read_xml_file_minidom()
+IOEngine.read_text_file()
+#IOEngine.read_xml_file_minidom()
