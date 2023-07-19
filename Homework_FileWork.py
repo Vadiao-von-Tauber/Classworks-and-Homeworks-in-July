@@ -86,7 +86,7 @@ Starships_Info.star_port_order()
 # number of guns: 104
 # hold volume: 380000 brt
 # home port: "Koronus Prime", 18004458900501
-# status: 'in immaterium'.
+# status: 'in immaterium'
 
 
 
@@ -111,7 +111,7 @@ Starships_Info.star_port_order()
 # number of guns: 32
 # hold volume: 1800000 brt
 # home port: "Serendipity", 365444200006
-# status: 'in immaterium'.
+# status: 'in immaterium'
 
 
 # ___
@@ -123,7 +123,7 @@ Starships_Info.star_port_order()
 # number of guns: 4
 # hold volume: 20 brt
 # home port: "Valhalla secundus", 9942VALH4-00
-# status: 'in spacebase'.
+# status: 'in spacebase'
 
 
 # ___
@@ -135,7 +135,7 @@ Starships_Info.star_port_order()
 # number of guns: 'unknown'
 # hold volume: 1275 brt
 # home port: "Gudrun secundus", 444---2800---53INQ
-# status: 'unknown'.
+# status: 'unknown'
 
 
 # ___
