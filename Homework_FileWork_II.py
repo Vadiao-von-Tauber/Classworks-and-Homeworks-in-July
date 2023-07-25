@@ -12,6 +12,12 @@ len(list_ships)
 print('\n \n \n immaterium \n      is a \n          dangerous')
 print()
 
+#
+#
+#
+# next steps nomework
+# peeped at Alex BeaveRG :)
+
 
 class Ships:
     def __init__(self, title: str, captain : str, experience: int, awards: int) -> None:
@@ -39,8 +45,6 @@ class ShipCompany:
     pass
 
 class Shipyard(ShipCompany):
-
-
     def __init__(self, name):
         """Docstring: Constructor for class BookShop"""
         self.name = name
@@ -55,8 +59,6 @@ class Shipyard(ShipCompany):
             print(f"""Book "{ship.title}" has not been added to "{self.name}" """)
 
 class ShipBase(ShipCompany):
-
-
     def __init__(self, name: str) -> None:
         self.name = name
         self.ships = []
@@ -71,7 +73,6 @@ class ShipBase(ShipCompany):
 
 
 class Order:
-
 
     def __init__(self) -> None:
         self.id = str(self.__hash__())[-10:]
@@ -114,7 +115,6 @@ class Order:
         print('Places:')
         for place in self.places:
             print(f'\t{place}')
-
 
 class Nauta: # Traveler (lat.)
     def __init__(self, race: str, name: str, surname: str, sex: str, age: int, planets: dict, vox_code: str) -> None:
