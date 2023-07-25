@@ -46,37 +46,34 @@ class ShipCompany:
 
 class Shipyard(ShipCompany):
     def __init__(self, name):
-        """Docstring: Constructor for class BookShop"""
         self.name = name
         self.ship = []
 
     def add_ship(self, ship: Ships):
-        """Docstring: Method to add book to BookShop"""
         if self.name not in ship.places:
             self.ships.append(ship)
             ship.add_place(self)
         else:
-            print(f"""Book "{ship.title}" has not been added to "{self.name}" """)
+            print(f"""Ship "{ship.title}" has not accepted by Officio Munitorum to "{self.name}" """)
 
 class ShipBase(ShipCompany):
     def __init__(self, name: str) -> None:
         self.name = name
         self.ships = []
 
-    def add_book(self, ship: Ships) -> None:
-        """Docstring: Method to add book to BookStock"""
+    def add_ship(self, ship: Ships) -> None:
         if self.name not in ship.places:
             self.ships.append(ship)
             ship.add_place(self)
         else:
-            print(f"""Book "{ship.title}" has not been added to "{self.name}" """)
+            print(f"""Ship "{ship.title}" has not accepted by Officio Munitorum to "{self.name}" """)
 
 
 class Order:
 
     def __init__(self) -> None:
         self.id = str(self.__hash__())[-10:]
-        self.books = {}
+        self.ships = {}
         self.statuses = ['refectio',
                          'in progressus',
                          'navis acceptatio',
@@ -86,8 +83,7 @@ class Order:
         self.status = self.statuses[0]
         self.places = []
 
-    def add_ship(self, ship: Ships, expirience=1) -> None:
-        """Docstring: Method to add book to Order"""
+    def add_ship(self, ship: Ships, expirience=3) -> None:
         if ship.title in self.ships:
             self.ships[ship.title] += expirience
         else:
@@ -106,7 +102,6 @@ class Order:
             self.status = self.statuses[self.statuses.index(self.status) + 2]
 
     def informatio(self) -> None:
-        """Docstring: Print information about order"""
         print(f'\nOrder ID: {self.id}')
         print(f'Status: {self.status}')
         print('Ships:')
@@ -128,7 +123,6 @@ class Nauta: # Traveler (lat.)
         self.orders = {}
 
     def add_order(self, order: Order) -> None:
-        """Docstring: Method to add order to Customer"""
         self.orders[order.id] = order.status
 
     def informatio(self) -> None:
